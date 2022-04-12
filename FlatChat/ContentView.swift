@@ -9,13 +9,25 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView {
+            List {
+                ForEach(0..<30) { _ in
+                    NavigationLink(destination: {
+                        ChatView()
+                    }) {
+                        ChatList()
+                    }
+                }
+            }.listStyle(PlainListStyle())
+                .navigationTitle("FlatChat")
+                .environment(\.defaultMinListRowHeight, 95)
+        }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .previewDevice("iPhone 13 Pro Max")
     }
 }

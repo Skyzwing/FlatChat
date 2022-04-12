@@ -14,6 +14,11 @@
 		EE507C6E2802CD0A0012A00F /* FlatChatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE507C6D2802CD0A0012A00F /* FlatChatTests.swift */; };
 		EE507C782802CD0B0012A00F /* FlatChatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE507C772802CD0B0012A00F /* FlatChatUITests.swift */; };
 		EE507C7A2802CD0B0012A00F /* FlatChatUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE507C792802CD0B0012A00F /* FlatChatUITestsLaunchTests.swift */; };
+		EE507C882802CD430012A00F /* ChatList.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE507C872802CD430012A00F /* ChatList.swift */; };
+		EE507C8A2802CDBA0012A00F /* ImageProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE507C892802CDBA0012A00F /* ImageProfile.swift */; };
+		EE507C8C2802D5A70012A00F /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE507C8B2802D5A70012A00F /* ChatView.swift */; };
+		EE507C8E2802D7900012A00F /* BubbleChat.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE507C8D2802D7900012A00F /* BubbleChat.swift */; };
+		EE94FB7E2805D86F009532E3 /* ChatListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE94FB7D2805D86F009532E3 /* ChatListModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +49,11 @@
 		EE507C732802CD0B0012A00F /* FlatChatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlatChatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE507C772802CD0B0012A00F /* FlatChatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlatChatUITests.swift; sourceTree = "<group>"; };
 		EE507C792802CD0B0012A00F /* FlatChatUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlatChatUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EE507C872802CD430012A00F /* ChatList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatList.swift; sourceTree = "<group>"; };
+		EE507C892802CDBA0012A00F /* ImageProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageProfile.swift; sourceTree = "<group>"; };
+		EE507C8B2802D5A70012A00F /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		EE507C8D2802D7900012A00F /* BubbleChat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleChat.swift; sourceTree = "<group>"; };
+		EE94FB7D2805D86F009532E3 /* ChatListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +106,10 @@
 			children = (
 				EE507C5C2802CD090012A00F /* FlatChatApp.swift */,
 				EE507C5E2802CD090012A00F /* ContentView.swift */,
+				EE94FB7D2805D86F009532E3 /* ChatListModel.swift */,
+				EE507C8B2802D5A70012A00F /* ChatView.swift */,
+				EE507C8D2802D7900012A00F /* BubbleChat.swift */,
+				EE507C862802CD1D0012A00F /* Component */,
 				EE507C602802CD0A0012A00F /* Assets.xcassets */,
 				EE507C622802CD0A0012A00F /* Preview Content */,
 			);
@@ -125,6 +139,15 @@
 				EE507C792802CD0B0012A00F /* FlatChatUITestsLaunchTests.swift */,
 			);
 			path = FlatChatUITests;
+			sourceTree = "<group>";
+		};
+		EE507C862802CD1D0012A00F /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				EE507C872802CD430012A00F /* ChatList.swift */,
+				EE507C892802CDBA0012A00F /* ImageProfile.swift */,
+			);
+			path = Component;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +281,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE507C5F2802CD090012A00F /* ContentView.swift in Sources */,
+				EE94FB7E2805D86F009532E3 /* ChatListModel.swift in Sources */,
+				EE507C8A2802CDBA0012A00F /* ImageProfile.swift in Sources */,
+				EE507C8C2802D5A70012A00F /* ChatView.swift in Sources */,
+				EE507C8E2802D7900012A00F /* BubbleChat.swift in Sources */,
+				EE507C882802CD430012A00F /* ChatList.swift in Sources */,
 				EE507C5D2802CD090012A00F /* FlatChatApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
