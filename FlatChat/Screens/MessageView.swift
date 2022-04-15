@@ -7,16 +7,18 @@
 
 import SwiftUI
 
-struct ChatView: View {
+struct MessageView: View {
+    @State var from: String?
+    
     var body: some View {
         VStack {
-            Text("Hello Chat View.")
+            Text("Chat \(from ?? "")")
         }
     }
 }
 
-struct ChatView_Previews: PreviewProvider {
+struct MessageView_Previews: PreviewProvider {
     static var previews: some View {
-        ChatView()
+        MessageView(from: "Skyzwing")
     }
 }

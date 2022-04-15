@@ -8,17 +8,32 @@
 import SwiftUI
 
 struct ChatList: View {
+    
+    @State var object: ChatListModal.ListData?
+    
+    private var DateText: some View {
+        if let date = object?.sendingTime.toDate() {
+            return Text(date.descriptiveString())
+        } else {
+            return Text("wrong format!!")
+        }
+    }
+    
     var body: some View {
         HStack {
-            ImageProfile()
+            ImageProfile(imageUrl: object?.imageProfile)
             VStack(alignment: .leading) {
                 HStack {
-                    Text("Lee ruby")
+                    Text(object?.from ?? "")
+                        .lineLimit(1)
+                    
                     Spacer()
-                    Text("21/08/2022")
+                    
+                    DateText
+                        .lineLimit(1)
                 }
                 HStack {
-                    Text("This day is your birthday? Happy birthday Oat, i hope to met you soon.")
+                    Text(object?.message ?? "not have message!")
                         .font(.body)
                         .foregroundColor(.gray)
                         .lineLimit(2)
